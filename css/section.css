@@ -1,0 +1,21 @@
+.section {
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px hsl(0deg 4% 66%);
+}
+
+.section_header {
+    padding: 15px;
+    border-bottom: 1px solid hsl(0deg 0% 92%);
+    margin: auto;
+}
+
+.section__title {
+    font-size: 10px;
+    margin: auto;    
+}
+
+.section_body {
+    padding: 15px;
+}

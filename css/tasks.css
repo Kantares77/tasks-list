@@ -1,0 +1,21 @@
+.tasks {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tasks_item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 15px;
+    padding: 15px;
+    align-items: center;
+    border-bottom: 1px solid hsl(0deg 0% 92%);
+}
+
+.tasks.button {
+    border: none;
+    width: 100px;
+    height: 100px;
+    color: white;
+   }
