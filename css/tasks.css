@@ -7,15 +7,44 @@
 .tasks_item {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-gap: 15px;
-    padding: 15px;
+    grid-gap: 10px;
     align-items: center;
+    padding: 10px;
     border-bottom: 1px solid hsl(0deg 0% 92%);
 }
 
-.tasks.button {
+.tasks_content--done {
+    text-decoration: line-through;
+}
+
+.tasks_button {
     border: none;
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
     color: white;
-   }
+    padding: 0px;
+}
+
+.tasks_button--done {
+    background: hsl(120, 96%, 25%);
+}
+
+.tasks_button--done:hover {
+    background: hsl(120, 96%, 35%);
+}
+
+.tasks_button--done:active {
+    background: hsl(120, 96%, 45%);
+}
+
+.tasks_button--remove {
+    background: hsl(0, 86%, 42%);
+}
+
+.tasks_button--remove:hover {
+    background: hsl(0, 86%, 52%);
+}
+
+.tasks_button--remove:active {
+    background: hsl(0, 86%, 62%);
+}

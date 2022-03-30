@@ -1,7 +1,7 @@
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 15px;
+    grid-gap: 20px;
 }
 
 @media (max-width: 767px) {
@@ -21,7 +21,6 @@
     border: none;
     background: hsl(0, 0%, 30%);
     color: white;
-    padding: 10px;  
     border-radius: 5px;
 }
 
