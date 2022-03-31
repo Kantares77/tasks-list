@@ -28,3 +28,5 @@ You can manage your tasks after added them to the list just click on the green b
 - JavaScript
 
 ## Application under the following link:
+
+https://kantares77.github.io/tasks-list/
