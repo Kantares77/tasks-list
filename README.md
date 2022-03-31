@@ -13,6 +13,8 @@ Your task will be added to the below list. Of course you can add as many tasks a
 
 You can manage your tasks after added them to the list just click on the green button when your task is finished or click on the red button when you decided to remove any task.
 
+![How to use](https://github.com/Kantares77/tasks-list/blob/main/images/Tasks-list.gif)
+
 ## Technologies
 
 - HTML
@@ -24,3 +26,7 @@ You can manage your tasks after added them to the list just click on the green b
 - Grid
 
 - JavaScript
+
+## Application under the following link:
+
+https://kantares77.github.io/tasks-list/
