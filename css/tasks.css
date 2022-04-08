@@ -23,6 +23,7 @@
     height: 30px;
     color: white;
     padding: 0px;
+    transition: 1s;
 }
 
 .tasks_button--done {
