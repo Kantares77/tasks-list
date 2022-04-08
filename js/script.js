@@ -1,15 +1,19 @@
 {
-    const tasks = [];
+    let tasks = [];
+    //let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
         render();
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+        ];
         render();
     };
 
@@ -38,31 +42,43 @@
         });
     };
 
-    const render = () => {
+    const renderTasks = () => {
+
         let tasksHTMLContent = "";
 
         for (const task of tasks) {
             tasksHTMLContent += `
-            <li class="tasks_item js-task">
-                <button class="tasks_button tasks_button--done js-toggleDone">
-                 ${task.done ? "✔" : ""}
-                </button>
-                <span class="tasks_content ${task.done ? "tasks_content--done" : ""}">
-                 ${task.content}
-                </span>
-                <button class="tasks_button tasks_button--remove js-remove">
-                 🗑
-                </button>               
-            </li>
-        `;
+        <li class="tasks_item js-task">
+            <button class="tasks_button tasks_button--done js-toggleDone">
+             ${task.done ? "✔" : ""}
+            </button>
+            <span class="tasks_content ${task.done ? "tasks_content--done" : ""}">
+             ${task.content}
+            </span>
+            <button class="tasks_button tasks_button--remove js-remove">
+             🗑
+            </button>               
+        </li>
+    `;
         }
 
         document.querySelector(".js-tasks").innerHTML = tasksHTMLContent;
+    };
+
+    const renderButtons = () => { };
+
+    const bindButtonsEvents = () => { };
+    //if();
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
 
         bindRemoveEvents();
         bindToggleDoneEvents();
+        bindButtonsEvents();
     };
-    
+
     const onFormSubmit = (event) => {
         event.preventDefault();
 
@@ -74,7 +90,7 @@
             newTaskElement.value = "";
         }
 
-        newTaskElement.focus();        
+        newTaskElement.focus();
     };
 
     const init = () => {
