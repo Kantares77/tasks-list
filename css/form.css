@@ -19,15 +19,15 @@
 .form_button {
     padding: 10px;
     border: none;
-    background: hsl(0, 0%, 30%);
+    background: hsl(193, 94%, 33%);
     color: white;
     border-radius: 5px;
 }
 
 .form_button:hover {
-    background: hsl(0, 0%, 40%);
+    background: hsl(193, 94%, 38%);
 }
 
 .form_button:active {
-    background: hsl(0, 0%, 50%);
+    background: hsl(193, 94%, 42%);
 }
