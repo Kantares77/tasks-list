@@ -13,6 +13,10 @@
     border-bottom: 1px solid hsl(0deg 0% 92%);
 }
 
+.tasks_item--hidden {
+    display: none;
+}
+
 .tasks_content--done {
     text-decoration: line-through;
 }

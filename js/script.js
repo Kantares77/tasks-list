@@ -1,6 +1,6 @@
 {
     let tasks = [];
-    //let hideDoneTasks = false;
+    let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
         tasks = [
@@ -13,12 +13,30 @@
     const removeTask = (taskIndex) => {
         tasks = [
             ...tasks.slice(0, taskIndex),
+            ...tasks.slice(taskIndex + 1),
         ];
         render();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            { ...tasks[taskIndex], done: !tasks[taskIndex].done },
+            ...tasks.slice(taskIndex + 1),
+        ];
+        render();
+    };
+
+    const markAllTaskSDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+        render();
+    };
+
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
         render();
     };
 
@@ -43,12 +61,8 @@
     };
 
     const renderTasks = () => {
-
-        let tasksHTMLContent = "";
-
-        for (const task of tasks) {
-            tasksHTMLContent += `
-        <li class="tasks_item js-task">
+        const taskToHTML = task => `
+        <li class="tasks_item${task.done && hideDoneTasks ? "task_item--hidden" : ""} js-task">
             <button class="tasks_button tasks_button--done js-toggleDone">
              ${task.done ? "✔" : ""}
             </button>
@@ -60,9 +74,9 @@
             </button>               
         </li>
     `;
-        }
-
-        document.querySelector(".js-tasks").innerHTML = tasksHTMLContent;
+        
+    const tasksElement = document.querySelector(".js-tasks");
+    tasksElement.innerHTML = tasks.map(taskToHTML).join("");        
     };
 
     const renderButtons = () => { };
