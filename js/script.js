@@ -98,7 +98,19 @@
         `;
     };
 
-    const bindButtonsEvents = () => { };   
+    const bindButtonsEvents = () => {
+        const markAllDoneButton = document.querySelector(".js-markAllDone");
+
+        if (markAllDoneButton) {
+            markAllDoneButton.addEventListener("click", markAllTaskSDone);
+        }
+
+        const toggleHideDoneTasksButton = document.querySelector("js-toggleHideDoneTasks");
+
+        if (toggleHideDoneTasksButton) {
+            toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
+        }
+    };   
 
     const render = () => {
         renderTasks();
