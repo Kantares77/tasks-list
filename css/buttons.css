@@ -23,5 +23,5 @@
 }
 
 .buttons_button:disabled {
-    color: white;    
+    color: hsl(0, 15%, 86%);  
 }
