@@ -61,8 +61,8 @@
     };
 
     const renderTasks = () => {
-        const taskToHTML = task => `
-        <li class="tasks_item${task.done && hideDoneTasks ? "task_item--hidden" : ""} js-task">
+        const taskToHTML = (task) => `
+        <li class="tasks_item ${task.done && hideDoneTasks ? "tasks_item--hidden" : ""} js-tasks">
             <button class="tasks_button tasks_button--done js-toggleDone">
              ${task.done ? "✔" : ""}
             </button>
@@ -105,7 +105,7 @@
             markAllDoneButton.addEventListener("click", markAllTaskSDone);
         }
 
-        const toggleHideDoneTasksButton = document.querySelector("js-toggleHideDoneTasks");
+        const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
 
         if (toggleHideDoneTasksButton) {
             toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
