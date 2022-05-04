@@ -22,7 +22,7 @@ The 1st one hides or shows finished tasks and the 2nd one marks all finished tas
 Please notice if tasks list will be empty the all new buttons will be invisible.
 The 2nd button will be disabled when all task will be marked as finished.
 
-![How to use](https://github.com/Kantares77/tasks-list/blob/main/images/Tasks-list.gif)
+![How to use](https://github.com/Kantares77/tasks-list-immutability/blob/main/images/tasksList.gif)
 
 ## Technologies
 
