@@ -14,7 +14,7 @@ Your task will be added to the below list. Of course you can add as many tasks a
 
 You can manage your tasks after added them to the list just click on the green button when your task is finished or click on the red button when you decided to remove any task.
 
-You can use two new buttons: The 1st one hides or shows finished tasks and the 2nd one marks all finished tasks. Please notice if tasks list will be empty the all new buttons will be invisible. The 2nd button will be disabled when all task will be marked as finished.
+You can use two new buttons: The 1st one hides or shows finished tasks and the 2nd one marks all finished tasks. Please notice if tasks list will be empty the all new buttons will be invisible. The 2nd button will be disabled when all tasks will be marked as finished.
 
 ![How to use](https://github.com/Kantares77/tasks-list-immutability/blob/main/images/tasksList.gif)
 
