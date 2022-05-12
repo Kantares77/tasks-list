@@ -5,7 +5,7 @@
     box-shadow: 1px 1px 2px hsl(0deg 4% 66%);
 }
 
-.section_header {
+.section__header {
     border-bottom: 1px solid hsl(0deg 0% 92%);
     display: grid;
     grid-template-columns: auto auto;
@@ -15,16 +15,16 @@
 }
 
 @media (max-width: 767px) {
-    .section_header {
+    .section__header {
         grid-template-columns: 1fr;
     }
 }
 
-.section_body {
+.section__body {
     padding: 20px;
 }
 
-.section_title {
+.section__title {
     font-size: 20px;
     padding: 20px;
     margin: 0;

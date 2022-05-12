@@ -9,6 +9,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     word-break: break-word;
+    background: hsl(0deg 0% 92%);
    }
 
 button {

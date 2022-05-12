@@ -10,13 +10,13 @@
     }
 }
 
-.form_input {
+.form__input {
     padding: 10px;
     border: 1px solid hsl(0deg 0% 92%);
     border-radius: 5px;
 }
 
-.form_button {
+.form__button {
     padding: 10px;
     border: none;
     background: hsl(193, 94%, 33%);
@@ -25,11 +25,11 @@
     transition: 0.5s;
 }
 
-.form_button:hover {
+.form__button:hover {
     background: hsl(193, 94%, 38%);
     transform: scale(1.1);
 }
 
-.form_button:active {
+.form__button:active {
     background: hsl(193, 94%, 42%);
 }
